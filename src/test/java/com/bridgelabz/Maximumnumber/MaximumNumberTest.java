@@ -22,4 +22,11 @@ public class MaximumNumberTest
         Assert.assertEquals(Float.valueOf(40.3f),result);
     }
 
+    @Test
+    public void givenString_isMaximum_shouldReturnMaximum()
+    {
+        MaximumNumber maximumNumber=new MaximumNumber();
+        String result=maximumNumber.checkStringMax("abc","pqr","xyz");
+        Assert.assertEquals(String.valueOf("xyz"),result);
+    }
 }

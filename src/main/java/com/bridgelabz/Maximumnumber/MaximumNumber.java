@@ -1,5 +1,7 @@
 package com.bridgelabz.Maximumnumber;
 
+import javax.print.DocFlavor;
+
 public class MaximumNumber
 {
 
@@ -28,4 +30,15 @@ public class MaximumNumber
 
     }
 
+    public String checkStringMax(String a,String b,String c)
+    {
+        String maxString=a;
+        if (b.compareTo(maxString) > 0 ) {
+            maxString = b;
+        }
+        if (c.compareTo(maxString) > 0) {
+            maxString =c;
+        }
+        return maxString;
+    }
 }
