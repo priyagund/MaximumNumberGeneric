@@ -14,4 +14,18 @@ public class MaximumNumber
         return maximumNumber;
 
     }
+
+    public Float checkFloatNumber( Float a,Float b,Float c)
+    {
+        Float maxmumNumber=a;
+        if (b.compareTo(maxmumNumber) > 0 ) {
+            maxmumNumber = b;
+        }
+        if (c.compareTo(maxmumNumber) > 0) {
+            maxmumNumber =c;
+        }
+        return maxmumNumber;
+
+    }
+
 }
