@@ -9,7 +9,7 @@ public class MaximumNumberTest
     public void giveNumber_isMaximum_shouldReturnMaxNumber()
     {
         MaximumNumber maximumNumber = new MaximumNumber();
-        Integer result =  maximumNumber.checkNumber(20, 30, 40);
+        Integer result = (Integer) maximumNumber.checkNumber(20, 30, 40);
         Assert.assertEquals(Integer.valueOf(40), result);
 
     }
@@ -18,7 +18,7 @@ public class MaximumNumberTest
     public void givenFloatNumber_isMaximum_shouldReturnmaxNumber()
     {
         MaximumNumber maximumNumber=new MaximumNumber();
-        Float result=maximumNumber.checkFloatNumber(20.0f,30.2f,40.3f);
+        Float result= (Float) maximumNumber.checkNumber(20.0f,30.2f,40.3f);
         Assert.assertEquals(Float.valueOf(40.3f),result);
     }
 
@@ -26,7 +26,7 @@ public class MaximumNumberTest
     public void givenString_isMaximum_shouldReturnMaximum()
     {
         MaximumNumber maximumNumber=new MaximumNumber();
-        String result=maximumNumber.checkStringMax("abc","pqr","xyz");
+        String result= (String) maximumNumber.checkNumber("abc","pqr","xyz");
         Assert.assertEquals(String.valueOf("xyz"),result);
     }
 }
