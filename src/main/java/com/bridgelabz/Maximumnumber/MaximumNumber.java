@@ -17,7 +17,7 @@ public class MaximumNumber <E extends Comparable>
         this.thirdValue = thirdValue;
     }
 
-    public E checkNumber() {
+    public E testMaximum() {
         E maximumNumber=this.maximumNumber;
         maximumNumber=this.firstValue;
         if (this.secondValue.compareTo(maximumNumber) > 0 ) {
