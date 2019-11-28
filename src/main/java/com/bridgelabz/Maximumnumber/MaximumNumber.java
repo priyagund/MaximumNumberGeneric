@@ -2,15 +2,14 @@ package com.bridgelabz.Maximumnumber;
 
 import javax.print.DocFlavor;
 
-public class MaximumNumber <E extends Comparable>
-{
+public class MaximumNumber<E extends Comparable> {
 
     E maximumNumber;
     E firstValue;
     E secondValue;
     E thirdValue;
 
-    public MaximumNumber( E firstValue, E secondValue, E thirdValue) {
+    public MaximumNumber(E firstValue, E secondValue, E thirdValue) {
 
         this.firstValue = firstValue;
         this.secondValue = secondValue;
@@ -18,17 +17,21 @@ public class MaximumNumber <E extends Comparable>
     }
 
     public E testMaximum() {
-        E maximumNumber=this.maximumNumber;
-        maximumNumber=this.firstValue;
-        if (this.secondValue.compareTo(maximumNumber) > 0 ) {
-             maximumNumber = secondValue;
+        E maximumNumber = this.maximumNumber;
+        maximumNumber = this.firstValue;
+        if (this.secondValue.compareTo(maximumNumber) > 0) {
+            maximumNumber = secondValue;
         }
         if (this.thirdValue.compareTo(maximumNumber) > 0) {
-             maximumNumber =thirdValue;
+            maximumNumber = thirdValue;
+            this.printMaximum(maximumNumber);
         }
         return maximumNumber;
 
     }
 
 
+    public void printMaximum(E maximumNumber) {
+        System.out.println("maximum number is " + maximumNumber);
+    }
 }
